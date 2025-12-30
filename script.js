@@ -41,7 +41,7 @@ function playGame (noOfRoundsPlayed) {
 
 console.log(`Final computerScore is ${computerScore}`);
 console.log(`Final humanScore is ${humanScore}`);
-console.log(computerScore>humanScore?"Computer wins overall!":"You win overall!")
+console.log(computerScore>humanScore?"Computer wins overall!":humanScore>computerScore?"You win overall!":"It is a draw overall");
 
     function playRound (humanChoice,computerChoice)
     {
